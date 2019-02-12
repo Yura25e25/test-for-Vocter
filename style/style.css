@@ -1,0 +1,319 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:after{
+    content:"";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.centerBlock{
+    content:"";
+    margin: 0 auto;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    min-height: 10px;
+}
+
+header{
+    height: 92px;
+    background: #eb5346;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 2px solid #252e39;
+}
+
+.logo{
+    margin: 20px 0 0 320px;
+}
+
+h2{
+    color: white;
+    font-size: 27px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    margin: -38px 0 0 380px;
+}
+
+.autoModel{
+    float: left;
+    width: 390px;
+    min-height: 390px;
+    margin-top: 90px;
+}
+
+.autoModel.current .autoModelOn{
+    display: block;
+}
+
+.autoModelOn{
+    display: none;
+    width: 0px;
+    margin: 20px 0 0 175px;
+    border: 20px solid transparent;
+    border-top: 20px solid #eb5346;
+}
+
+.autoModelLevel{
+    width: 210px;
+    min-height: 32px;
+    background: #252e39;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h3{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.citroen{
+    margin-top: 110px;
+    width: 375px; 
+    height: 180px;
+    background: url(../img/miniSprites.png) -5px -5px;
+}
+
+.mazda{
+    margin-top: 110px;
+    width: 375px; 
+    height: 180px;
+    background: url(../img/miniSprites.png) -5px -195px;
+}
+
+.mercedes{
+    margin-top: 110px;
+    width: 375px; 
+    height: 180px;
+    background: url(../img/miniSprites.png) -390px -5px;
+}
+
+.autoModelPrice{
+    margin-top: 55px;
+    width: 315px;
+    min-height: 32px;
+    background: #eb5346;
+}
+
+.costCalculation{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+.autoShow.current-citroen .carCitroen{
+    display: block;
+}
+
+
+.autoShow.current-mazda .carMazda{
+    display: block;
+}
+
+.autoShow.current-mercedes .carMercedes{
+    display: block;
+}
+
+.autoShowInfo{
+    width: 698px;
+    float: left;
+}
+
+.carMercedes, .carMazda, .carCitroen{
+    margin: 180px 0 140px 0;
+    display: none;
+}
+
+.autoShowInfoleft{  
+    float: left;
+    margin: 0 0 0 80px ;
+}
+
+.priceServices{
+    font-family: 'PT Sans', sans-serif;
+    color: #eb5346;
+    font-size: 22px;
+    position: relative;
+}
+
+.priceServices::before{
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 1px;
+    background: #252e39;
+    bottom: -10px;
+    left: 0;
+    z-index: -10;
+}
+
+.priceServicesInfo{
+    margin: 15px 0 50px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+.priceServicesInfo span{
+    margin: 0 0 0 50px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #eb5346;
+}
+
+.oneButton{
+    margin: 32px 0 145px 0 ;
+    padding: 14px 40px;
+    background: #252e39;
+    color: white;
+    border: none;
+    font-size: 22px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: right;
+}
+
+.oneButton:hover{
+    background: #eb5346;
+}
+
+.sidebar{
+    float: left;
+    margin: 100px 0 0 200px;
+    position: relative;
+}
+
+.sidebar::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 560px;
+    background: #252e39;
+    left: 0;
+    top: 0;
+}
+
+.sidebar li { 
+    margin: 0 0 20px 10px;
+}
+
+#openParts{
+    margin: 20px 0 20px 10px;
+}
+
+.sidebar li a{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #252e39;
+    text-transform: uppercase;
+}
+
+
+#parts{
+    color: white;
+    background: #252e39;
+    position: relative;
+    padding: 10px 98px 10px 20px;
+    margin: 0 0 0 -10px;
+}
+
+#parts::after{
+    content:"";
+    border: 18px solid transparent;	
+    border-right: 18px solid #252e39;;
+    position: absolute;
+    top: 0px;
+    left: -36px;
+}
+
+#closeParts{
+    margin: 20px 0 0 0;
+    display: none;
+}
+
+#openParts:hover #closeParts{
+    display: block;
+}
+
+#closeParts a{
+    padding: 10px 0px 10px 30px;
+    margin: -10px 0 -20px -20px;
+    width: 148px;
+    display: block;
+    position: relative;
+}
+
+#closeParts a:hover{
+    background: #eb5346;
+    z-index: 3;
+}
+
+#closeParts a::after{
+    content:"";
+    border: 17px solid transparent;	
+    border-right: 17px solid #eb5346;;
+    position: absolute;
+    top: 0px;
+    left: -34px;
+    display: none;
+}
+
+#closeParts a:hover::after{
+    display: block;
+}
